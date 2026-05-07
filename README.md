@@ -6,7 +6,7 @@
 
 | Resource | Operations |
 |----------|-----------|
-| **Message** | Send Text, Send Template, Send Media, Get Many, Mark as Read |
+| **Message** | Send Text, Send Template, Send Media, Get Context, Get Many, Mark as Read |
 | **Contact** | Create, Get Many, Search, Update |
 | **Conversation** | Get Many, Get, Update Status |
 | **Template** | Get Many, Create, Delete |
@@ -16,7 +16,7 @@
 ## Credentials
 
 You need:
-- **Base URL** — your Supabase project URL (e.g. `https://abc.supabase.co`)
+- **Base URL** — your wakit instance URL. For wakit Cloud: `https://api.wakit.ai`
 - **API Key** — create one in the wakit dashboard under Settings > API Keys
 
 ## Installation
