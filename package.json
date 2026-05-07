@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-wakit",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "n8n community node for wakit — open-source WhatsApp Business API platform",
 	"keywords": [
 		"n8n",
@@ -18,7 +18,7 @@
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"scripts": {
-		"build": "tsc",
+		"build": "tsc && cp src/nodes/Wakit/wakit.svg dist/nodes/Wakit/wakit.svg",
 		"dev": "tsc --watch",
 		"lint": "eslint src --ext .ts",
 		"prepublishOnly": "npm run build"
