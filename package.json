@@ -1,0 +1,44 @@
+{
+	"name": "n8n-nodes-wakit",
+	"version": "0.1.0",
+	"description": "n8n community node for wakit — open-source WhatsApp Business API platform",
+	"keywords": [
+		"n8n",
+		"n8n-community-node-package",
+		"wakit",
+		"whatsapp",
+		"whatsapp-business-api"
+	],
+	"license": "MIT",
+	"homepage": "https://wakit.ai",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MirloLLC/n8n-nodes-wakit"
+	},
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsc --watch",
+		"lint": "eslint src --ext .ts",
+		"prepublishOnly": "npm run build"
+	},
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"nodes": [
+			"dist/nodes/Wakit/Wakit.node.js"
+		],
+		"credentials": [
+			"dist/credentials/WakitApi.credentials.js"
+		]
+	},
+	"peerDependencies": {
+		"n8n-core": "*",
+		"n8n-workflow": "*"
+	},
+	"devDependencies": {
+		"@types/node": "^20.0.0",
+		"n8n-workflow": "^1.0.0",
+		"typescript": "^5.0.0"
+	}
+}
