@@ -40,5 +40,9 @@
 		"@types/node": "^20.0.0",
 		"n8n-workflow": "^1.0.0",
 		"typescript": "^5.0.0"
+	},
+	"overrides": {
+		"fast-xml-parser": "4.5.4",
+		"form-data": "4.0.5"
 	}
 }
